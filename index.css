@@ -1,0 +1,13 @@
+/* Tipografía de palo seco: Inter (diseñada para leerse bien en pantalla) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+/* Tailwind v4: la clase font-sans pasa a usar Inter */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* El desplegable nativo respeta el tema oscuro */
+select {
+  color-scheme: dark;
+}
